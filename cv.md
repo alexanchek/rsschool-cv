@@ -9,9 +9,9 @@ I like to learn and i'm intend to study hard.
 
 ## My skills. ##
 
-+Python (basic)
-+Java (basic)
-+Go (basic)
++Python *(basic)*
++Java *(basic)*
++Go *(basic)*
 +Git
 +Html
 +CSS. 
