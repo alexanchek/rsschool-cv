@@ -1,4 +1,4 @@
-# Alexander KHudyakov #
+# Alexander Khudyakov #
 
 ## Personal Information ##
 dreamtheater@list.ru
