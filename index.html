@@ -1,74 +1,74 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Alexander Khudyakov # | rsschool-cv</title>
-<meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Alexander Khudyakov #" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="https://alexanchek.github.io/rsschool-cv/cv.html" />
-<meta property="og:url" content="https://alexanchek.github.io/rsschool-cv/cv.html" />
-<meta property="og:site_name" content="rsschool-cv" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Alexander Khudyakov #" />
-<script type="application/ld+json">
-{"@type":"WebPage","headline":"Alexander Khudyakov #","url":"https://alexanchek.github.io/rsschool-cv/cv.html","@context":"https://schema.org"}</script>
-<!-- End Jekyll SEO tag -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="/rsschool-cv/assets/css/style.css?v=7578a2facd2b94820e78a7d59cfbeb79a290d089">
-  </head>
-  <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      
-      <h1><a href="https://alexanchek.github.io/rsschool-cv/">rsschool-cv</a></h1>
-      
+  <title>Alexander Khudyakov # | rsschool-cv</title>
+  <meta name="generator" content="Jekyll v3.9.0" />
+  <meta property="og:title" content="Alexander Khudyakov #" />
+  <meta property="og:locale" content="en_US" />
+  <link rel="canonical" href="https://alexanchek.github.io/rsschool-cv/cv.html" />
+  <meta property="og:url" content="https://alexanchek.github.io/rsschool-cv/cv.html" />
+  <meta property="og:site_name" content="rsschool-cv" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="Alexander Khudyakov #" />
 
-      <h1 id="alexander-khudyakov">Alexander Khudyakov</h1>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
 
-<h2 id="personal-information">Personal Information</h2>
-<p>dreamtheater@list.ru</p>
+<body>
+  <div class="container-lg px-3 my-5 markdown-body">
 
-<p>Hello, I’m Alexander from Moscow. I’m 29 years old. 
-I’m working as a it teacher at school. At the moment I learnt basic python, basic java, basic go. 
-I like to learn and i’m intend to study hard.</p>
+    <h1><a href="https://alexanchek.github.io/rsschool-cv/">rsschool-cv</a></h1>
 
-<h2 id="my-skills">My skills.</h2>
 
-<p>+Python <em>(basic)</em>
-+Java <em>(basic)</em>
-+Go <i>(basic)</i>
-+Git
-+Html
-+CSS. 
-+Bash / linux.
-+Docker</p>
+    <h1 id="alexander-khudyakov">Alexander Khudyakov</h1>
 
-<h2 id="code-examples">Code Examples.</h2>
+    <h2 id="personal-information">Personal Information</h2>
+    <p>dreamtheater@list.ru</p>
 
-<p>There is a solution of task: 
-Some guy made an app for a robot. Possible commands: S - move forward, L - turn left, R - turn right.
-Does a robot get back to a start position? Please, write -1 if it’s so, otherwise write “yes”</p>
+    <p>Hello, I’m Alexander from Moscow. I’m 29 years old.
+      I’m working as a it teacher at school. At the moment I learnt basic python, basic java, basic go.
+      I like to learn and i’m intend to study hard.</p>
 
-<p>```data = ‘SLSRSRSRSS’
-point = [0, 0]
-directions = [0, 1, 2, 3]
-cur_direction = 0</p>
+    <h2 id="my-skills">My skills.</h2>
 
-<p>dx = [0, -1, 0, 1]
-dy = [1, 0, -1, 0]</p>
+    <p>+Python <em>(basic)</em>
+      +Java <em>(basic)</em>
+      +Go <em>(basic)</em>
+      +Git
+      +Html
+      +CSS.
+      +Bash / linux.
+      +Docker</p>
 
-<p>for i in range(len(data)):
-    print(‘current position -‘, point)
-    if data[i] == ‘S’:
-        point[0] += dx[cur_direction % 4]
-        point[1] += dy[cur_direction % 4]
-        print(‘move to ‘, point)</p>
+    <h2 id="code-examples">Code Examples.</h2>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>elif data[i] == 'R':
+    <p>There is a solution of task:
+      Some guy made an app for a robot. Possible commands: S - move forward, L - turn left, R - turn right.
+      Does a robot get back to a start position? Please, write -1 if it’s so, otherwise write “yes”</p>
+
+    <p>```data = ‘SLSRSRSRSS’
+      point = [0, 0]
+      directions = [0, 1, 2, 3]
+      cur_direction = 0</p>
+
+    <p>dx = [0, -1, 0, 1]
+      dy = [1, 0, -1, 0]</p>
+
+    <p>for i in range(len(data)):
+      print(‘current position -‘, point)
+      if data[i] == ‘S’:
+      point[0] += dx[cur_direction % 4]
+      point[1] += dy[cur_direction % 4]
+      print(‘move to ‘, point)</p>
+
+    <div class="language-plaintext highlighter-rouge">
+      <div class="highlight">
+        <pre class="highlight"><code>elif data[i] == 'R':
     cur_direction += 3
     cur_direction %= 4
     print(cur_direction)
@@ -78,11 +78,15 @@ elif data[i] == 'L':
     cur_direction %= 4 if point == [0,0]:
 print('Вернулся') else:
 print(-1) ```
-</code></pre></div></div>
+</code></pre>
+      </div>
+    </div>
 
-<p>Python allows to draw nice patterns. Me and my students do this with python like this</p>
+    <p>Python allows to draw nice patterns. Me and my students do this with python like this</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import turtle
+    <div class="language-plaintext highlighter-rouge">
+      <div class="highlight">
+        <pre class="highlight"><code>import turtle
 import random
 
 t = turtle.Pen()
@@ -94,26 +98,26 @@ for x in range(100):
     t.pencolor(colors[x%len(colors)-1])
     t.forward(x)
     t.left(91)
-</code></pre></div></div>
-
-<h2 id="experience">Experience</h2>
-<p>I didnt have exeprience, so I’m going to get it from online courses and self-study.</p>
-
-<p>2011-2021
-School 1995 - IT Teacher</p>
-
-<h2 id="education">Education</h2>
-<p>Moscow State University of Sholokhov (2007-2012)</p>
-
-<h2 id="qualificiations">Qualificiations</h2>
-<p>Machine learning for IT teachers (2020)</p>
-
-
-
-      
+</code></pre>
+      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-    
-  </body>
+
+    <h2 id="experience">Experience</h2>
+    <p>I didnt have exeprience, so I’m going to get it from online courses and self-study.</p>
+
+    <p>2011-2021
+      School 1995 - IT Teacher</p>
+
+    <h2 id="education">Education</h2>
+    <p>Moscow State University of Sholokhov (2007-2012)</p>
+
+    <h2 id="qualificiations">Qualificiations</h2>
+    <p>Machine learning for IT teachers (2020)</p>
+
+
+
+
+  </div>
+</body>
+
 </html>
