@@ -2,103 +2,91 @@
 <html lang="en-US">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Alexander Khudyakov # | rsschool-cv</title>
-  <meta name="generator" content="Jekyll v3.9.0" />
-  <meta property="og:title" content="Alexander Khudyakov #" />
-  <meta property="og:locale" content="en_US" />
-  <link rel="canonical" href="https://alexanchek.github.io/rsschool-cv/cv.html" />
-  <meta property="og:url" content="https://alexanchek.github.io/rsschool-cv/cv.html" />
-  <meta property="og:site_name" content="rsschool-cv" />
-  <meta name="twitter:card" content="summary" />
-  <meta property="twitter:title" content="Alexander Khudyakov #" />
-
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <div class="container-lg px-3 my-5 markdown-body">
+  <div class="container">
 
     <h1><a href="https://alexanchek.github.io/rsschool-cv/">rsschool-cv</a></h1>
 
 
-    <h1 id="alexander-khudyakov">Alexander Khudyakov</h1>
+    <h1>Alexander Khudyakov</h1>
 
-    <h2 id="personal-information">Personal Information</h2>
+    <h2>Personal Information</h2>
     <p>dreamtheater@list.ru</p>
 
     <p>Hello, I’m Alexander from Moscow. I’m 29 years old.
       I’m working as a it teacher at school. At the moment I learnt basic python, basic java, basic go.
       I like to learn and i’m intend to study hard.</p>
 
-    <h2 id="my-skills">My skills.</h2>
+    <h2>My skills.</h2>
 
-    <p>+Python <em>(basic)</em>
-      +Java <em>(basic)</em>
-      +Go <em>(basic)</em>
-      +Git
-      +Html
-      +CSS.
-      +Bash / linux.
+    <p>+Python <em>(basic)</em><br>
+      +Java <em>(basic)</em><br>
+      +Go <em>(basic)</em><br>
+      +Git<br>
+      +Html<br>
+      +CSS.<br>
+      +Bash / linux.<br>
       +Docker</p>
 
-    <h2 id="code-examples">Code Examples.</h2>
+    <h2>Code Examples.</h2>
 
     <p>There is a solution of task:
       Some guy made an app for a robot. Possible commands: S - move forward, L - turn left, R - turn right.
       Does a robot get back to a start position? Please, write -1 if it’s so, otherwise write “yes”</p>
-
-    <p>```data = ‘SLSRSRSRSS’
-      point = [0, 0]
-      directions = [0, 1, 2, 3]
+    <div class="code_bg">
+      <code class="code_text">
+    <p>data = ‘SLSRSRSRSS’<br>
+      point = [0, 0]<br>
+      directions = [0, 1, 2, 3]<br>
       cur_direction = 0</p>
 
-    <p>dx = [0, -1, 0, 1]
+    <p>dx = [0, -1, 0, 1]<br>
       dy = [1, 0, -1, 0]</p>
 
-    <p>for i in range(len(data)):
-      print(‘current position -‘, point)
-      if data[i] == ‘S’:
-      point[0] += dx[cur_direction % 4]
-      point[1] += dy[cur_direction % 4]
-      print(‘move to ‘, point)</p>
 
-    <div class="language-plaintext highlighter-rouge">
-      <div class="highlight">
-        <pre class="highlight"><code>elif data[i] == 'R':
-    cur_direction += 3
-    cur_direction %= 4
-    print(cur_direction)
-
-elif data[i] == 'L':
-    cur_direction += 1
-    cur_direction %= 4 if point == [0,0]:
-print('Вернулся') else:
-print(-1) ```
-</code></pre>
-      </div>
+    for i in range(len(data)):<br>
+    <div class="code_wrapper">
+      print(‘current position -‘, point)<br>
+      if data[i] == ‘S’:<br>
+      <div class="code_wrapper">point[0] += dx[cur_direction % 4]<br>
+        point[1] += dy[cur_direction % 4]<br>
+        print(‘move to ‘, point)<br></div>  
+         elif data[i] == 'R':<br>
+         <div class="code_wrapper"> cur_direction += 3<br>
+        cur_direction %= 4<br>
+        print(cur_direction)<br></div>
+  
+        elif data[i] == 'L':<br>
+        <div class="code_wrapper"> cur_direction += 1<br>
+        cur_direction %= 4 <br></div>  </div>
+      if point == [0,0]:
+          <div class="code_wrapper"> print('Вернулся') </div>
+          else:
+        <div class="code_wrapper">print(-1)</div>
+      </code>
     </div>
 
     <p>Python allows to draw nice patterns. Me and my students do this with python like this</p>
 
-    <div class="language-plaintext highlighter-rouge">
-      <div class="highlight">
-        <pre class="highlight"><code>import turtle
-import random
-
-t = turtle.Pen()
-colors = ["black","orange","red", "blue"]
-bgColors = ["blue","red", "orange", "black"]
-for x in range(100):
-    # randomColor = random.randint(0, len(colors)-1)
-    turtle.bgcolor(bgColors[x%len(bgColors)-1])
-    t.pencolor(colors[x%len(colors)-1])
-    t.forward(x)
-    t.left(91)
-</code></pre>
+    <div class="code_bg">
+      <div class="code_style">
+        <code class="code_text"><p>import turtle<br>
+        import random
+      </p>
+        <p>t = turtle.Pen()<br>
+        colors = ["black","orange","red", "blue"]<br>
+        bgColors = ["blue","red", "orange", "black"]<br></p>
+        for x in range(100):<br>
+       <div class="code_wrapper"> # randomColor = random.randint(0, len(colors)-1)<br>
+            turtle.bgcolor(bgColors[x%len(bgColors)-1])<br>
+            t.pencolor(colors[x%len(colors)-1])<br>
+            t.forward(x)<br>
+            t.left(91)</div> 
+        </code>
       </div>
     </div>
 
@@ -113,10 +101,6 @@ for x in range(100):
 
     <h2 id="qualificiations">Qualificiations</h2>
     <p>Machine learning for IT teachers (2020)</p>
-
-
-
-
   </div>
 </body>
 
