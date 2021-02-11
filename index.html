@@ -2,6 +2,7 @@
 <html lang="en-US">
 
 <head>
+  <meta charset="UTF-8">
   <title>Alexander Khudyakov # | rsschool-cv</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -38,7 +39,7 @@
       Some guy made an app for a robot. Possible commands: S - move forward, L - turn left, R - turn right.
       Does a robot get back to a start position? Please, write -1 if it’s so, otherwise write “yes”</p>
     <div class="code_bg">
-      <code class="code_text">
+      <div class="code_text">
     <p>data = ‘SLSRSRSRSS’<br>
       point = [0, 0]<br>
       directions = [0, 1, 2, 3]<br>
@@ -67,14 +68,14 @@
           <div class="code_wrapper"> print('Вернулся') </div>
           else:
         <div class="code_wrapper">print(-1)</div>
-      </code>
+      </div>
     </div>
 
     <p>Python allows to draw nice patterns. Me and my students do this with python like this</p>
 
     <div class="code_bg">
       <div class="code_style">
-        <code class="code_text"><p>import turtle<br>
+        <div class="code_text"><p>import turtle<br>
         import random
       </p>
         <p>t = turtle.Pen()<br>
@@ -86,7 +87,7 @@
             t.pencolor(colors[x%len(colors)-1])<br>
             t.forward(x)<br>
             t.left(91)</div> 
-        </code>
+        </div>
       </div>
     </div>
 
