@@ -1,10 +1,15 @@
 body {
-    width: 900px;
+    width: 950px;
     margin: 0 auto;
     font-family: "Segoe UI";
 }
 
-a:hover {
+a {
+    color:#93be4e;
+}
+
+a:hover, a:after, a:active, a:visited {
+    color:#93be4e;
     text-decoration: none;
 }
 
@@ -45,12 +50,15 @@ h1, h2, h3, h4, h5 {
     box-shadow: 0 0 7px #666; 
 }
 
+
+
 /* E-MAIL BLOCK STYLES START */
 
 .information_email_block {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 5px;
+    margin-right: 10px;
 
 }
 
@@ -68,6 +76,8 @@ h1, h2, h3, h4, h5 {
 .information_telegram_block {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 5px;
+    margin-right: 10px;
 }
 
 .information_telegram_img {
@@ -77,6 +87,24 @@ h1, h2, h3, h4, h5 {
 }
 
 /* TELEGRAM BLOCK STYLES END */
+
+
+/* WEB SITE BLOCK STYLES START */
+
+.information_website_block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    margin-right: 10px;
+}
+
+.information_website_img {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+}
+
+/* WEB SITE BLOCK STYLES END */
 
 .code_bg {
     background-color:  #f8f8f8;
