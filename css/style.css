@@ -40,17 +40,38 @@ h1, h2, h3, h4, h5 {
 }
 
 
+/* HEADER PHOTO STYLES START */
+
 .header_photo {
     width: 640px;
     margin: 0 auto;
 }
 
 .header_image {
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    width:640px;
+    height:480px;
+    display: block;
     border-radius: 50px; 
-    box-shadow: 0 0 7px #666; 
+    box-shadow: 0 0 7px rgb(19, 18, 18); 
+
 }
 
+.header_image:hover {
+    -webkit-transform: scale(1.05,1.05);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.05,1.05);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+}
 
+/* HEADER PHOTO STYLES END */
 
 /* E-MAIL BLOCK STYLES START */
 
