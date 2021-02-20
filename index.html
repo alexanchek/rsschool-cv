@@ -24,7 +24,7 @@
           <img src="./img/alex_kh.jpg" alt="Alexander Khudyakov" class="header_image">
         </div>
 
-        <div class="information_block">
+        <section class="information_block">
           <h2>Personal Information</h2>
 
           <div class="information_contacts">
@@ -61,7 +61,7 @@
 
         
 
-        </div>
+        </section>
     
         <p>Hello, I’m Alexander from Moscow, Russia.
            I’m 29 years old.
@@ -69,10 +69,10 @@
           I like to learn and i’m intend to study hard. </p>
       </div>
     </div>
-
+    <section class="skills">
     <h2>My skills</h2>
 
-    <div class="skills">
+
       <ul class="list_skills">
         <li class="element_skills">
           Python(basic)
@@ -102,69 +102,71 @@
           Docker
         </li>
       </ul>
-    </div>
-
-    <h2>Code Examples</h2>
-
-    <p>There is a solution of the following task:
-      Some guy made an app for a robot. Possible commands for this robot: S - move forward, L - turn left, R - turn right.
-      Can a robot get back to a start position? Please, write "-1" if it’s so, otherwise write “yes”.</p>
-    <div class="code1_block">
-      <div class="code_bg">
-        <div class="code_text">
-      <p class="code_first_line">data = ‘SLSRSRSRSS’<br>
-        point = [0, 0]<br>
-        directions = [0, 1, 2, 3]<br>
-        cur_direction = 0</p>
-  
-      <p>dx = [0, -1, 0, 1]<br>
-        dy = [1, 0, -1, 0]</p>
-  
-  
-      for i in range(len(data)):<br>
-      <div class="code_wrapper">
-        print(‘current position -‘, point)<br>
-        if data[i] == ‘S’:<br>
-        <div class="code_wrapper">point[0] += dx[cur_direction % 4]<br>
-          point[1] += dy[cur_direction % 4]<br>
-          print(‘move to ‘, point)<br></div>  
-           elif data[i] == 'R':<br>
-           <div class="code_wrapper"> cur_direction += 3<br>
-          cur_direction %= 4<br>
-          print(cur_direction)<br></div>
+    </section>
     
-          elif data[i] == 'L':<br>
-          <div class="code_wrapper"> cur_direction += 1<br>
-          cur_direction %= 4 <br></div>  </div>
-        if point == [0,0]:
-            <div class="code_wrapper"> print('yes') </div>
-            else:
-          <div class="code_wrapper">print(-1)</div>
+    <section class="code_Examples"> 
+      <h2>Code Examples</h2>
+
+      <p>There is a solution of the following task:
+        Some guy made an app for a robot. Possible commands for this robot: S - move forward, L - turn left, R - turn right.
+        Can a robot get back to a start position? Please, write "-1" if it’s so, otherwise write “yes”.</p>
+      <div class="code1_block">
+        <div class="code_bg">
+          <div class="code_text">
+        <p class="code_first_line">data = ‘SLSRSRSRSS’<br>
+          point = [0, 0]<br>
+          directions = [0, 1, 2, 3]<br>
+          cur_direction = 0</p>
+    
+        <p>dx = [0, -1, 0, 1]<br>
+          dy = [1, 0, -1, 0]</p>
+    
+    
+        for i in range(len(data)):<br>
+        <div class="code_wrapper">
+          print(‘current position -‘, point)<br>
+          if data[i] == ‘S’:<br>
+          <div class="code_wrapper">point[0] += dx[cur_direction % 4]<br>
+            point[1] += dy[cur_direction % 4]<br>
+            print(‘move to ‘, point)<br></div>  
+             elif data[i] == 'R':<br>
+             <div class="code_wrapper"> cur_direction += 3<br>
+            cur_direction %= 4<br>
+            print(cur_direction)<br></div>
+      
+            elif data[i] == 'L':<br>
+            <div class="code_wrapper"> cur_direction += 1<br>
+            cur_direction %= 4 <br></div>  </div>
+          if point == [0,0]:
+              <div class="code_wrapper"> print('yes') </div>
+              else:
+            <div class="code_wrapper">print(-1)</div>
+          </div>
         </div>
       </div>
-    </div>
-    
-   <div class="code2_block">
-    <p>Python allows to draw nice patterns. Me and my students do this with python like this:</p>
-
-    <div class="code_bg">
-      <div class="code_text">
-        <p class = "code_first_line">import turtle<br>
-        import random
-      </p>
-        <p>t = turtle.Pen()<br>
-        colors = ["black","orange","red", "blue"]<br>
-        bgColors = ["blue","red", "orange", "black"]<br></p>
-        for x in range(100):<br>
-       <div class="code_wrapper"> # randomColor = random.randint(0, len(colors)-1)<br>
-            turtle.bgcolor(bgColors[x%len(bgColors)-1])<br>
-            t.pencolor(colors[x%len(colors)-1])<br>
-            t.forward(x)<br>
-            t.left(91)
-        </div> 
+      
+     <div class="code2_block">
+      <p>Python allows to draw nice patterns. Me and my students do this with python like this:</p>
+  
+      <div class="code_bg">
+        <div class="code_text">
+          <p class = "code_first_line">import turtle<br>
+          import random
+        </p>
+          <p>t = turtle.Pen()<br>
+          colors = ["black","orange","red", "blue"]<br>
+          bgColors = ["blue","red", "orange", "black"]<br></p>
+          for x in range(100):<br>
+         <div class="code_wrapper"> # randomColor = random.randint(0, len(colors)-1)<br>
+              turtle.bgcolor(bgColors[x%len(bgColors)-1])<br>
+              t.pencolor(colors[x%len(colors)-1])<br>
+              t.forward(x)<br>
+              t.left(91)
+          </div> 
+        </div>
       </div>
-    </div>
-   </div>
+     </div></section>
+   
 
  
 
